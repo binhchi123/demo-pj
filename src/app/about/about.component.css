@@ -1,0 +1,119 @@
+.about img {
+    width: 100%;
+    position: relative;
+    opacity: 0.7;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.image img {
+    width: 100%;
+}
+
+.des span {
+    color: #ff7550;
+}
+
+.des a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    padding: 50px;
+}
+
+.intro img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.txt {
+    text-align: center;
+}
+
+.txt {
+    color: white;
+    position: absolute;
+    top: 230%;
+    left: 0;
+    right: 0;
+}
+
+.txt h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.txt a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff7550;
+    padding: 15px 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .text h1 {
+        top: 60%;
+    }
+
+    .txt {
+        top: 320%;
+    }
+
+    .txt h2 {
+        font-size: 25px;
+        font-weight: none;
+    }
+
+    .txt p {
+        font-size: small;
+    }
+
+    .txt a {
+        text-decoration: none;
+        color: white;
+        background-color: #ff7550;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .text h1 {
+        font-size: 35px;
+        top: 65%;
+    }
+
+    .txt {
+        top: 315%;
+    }
+
+    .txt h2 {
+        font-size: 18px;
+        font-weight: none;
+    }
+
+    .txt p {
+        font-size: small;
+    }
+
+    .txt a {
+        text-decoration: none;
+        color: white;
+        background-color: #ff7550;
+        padding: 7px;
+    }
+}
