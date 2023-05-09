@@ -1,0 +1,115 @@
+.banner img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.title h2 {
+    text-transform: uppercase;
+}
+
+.items-img {
+    position: relative;
+}
+
+.items-img img {
+    width: 100%;
+}
+
+.items-name {
+    position: absolute;
+    bottom: 27px;
+}
+
+.items-name a {
+    background-color: #fa9e1b;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 35px;
+    padding: 5px 25px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fa9e1b;
+}
+
+.icons ul {
+    padding: 0;
+}
+
+.icons ul li {
+    display: inline-block;
+    padding: 7px;
+}
+
+.icons ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.post {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.com {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.bicy {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.ship {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+
+.links:hover a {
+    color: #fa9e1b;
+}
+
+::ng-deep label.star{
+    padding: 0 5px !important;
+    font-size: 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .items-name {
+        bottom: -190%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .items-name {
+        bottom: -75%;
+    }
+}

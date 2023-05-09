@@ -1,0 +1,44 @@
+header {
+    background-color: black;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.phone {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.mail {
+    text-decoration: none;
+    color: white;
+}
+
+.sign {
+    text-decoration: none;
+    color: white;
+}
+
+.regis {
+    text-decoration: none;
+    color: white;
+}
+
+.gach {
+    color: white;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
