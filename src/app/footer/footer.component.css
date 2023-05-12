@@ -64,6 +64,15 @@ span {
     border: 1px solid white;
 }
 
+.lin {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
 .left ul {
     padding: 0;
     display: flex;

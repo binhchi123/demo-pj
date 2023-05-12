@@ -101,15 +101,3 @@
     padding: 0 5px !important;
     font-size: 20px !important;
 }
-
-@media screen and (max-width: 768px) {
-    .items-name {
-        bottom: -190%;
-    }
-}
-
-@media screen and (max-width: 325px) {
-    .items-name {
-        bottom: -75%;
-    }
-}

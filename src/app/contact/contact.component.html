@@ -3,7 +3,7 @@
     <div class="contact">
         <img src="assets/image/contact-banner.jpg" alt="">
         <div class="text">
-            <h1>Contact us</h1>
+            <h1>Liên hệ chúng tôi</h1>
         </div>
     </div>
     <div class="container">
@@ -11,7 +11,7 @@
             <div class="col-lg-6">
                 <form action="" method="post" [formGroup]="formData">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name*"
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Họ và tên*"
                             formControlName="name">
                         <div *ngIf="form.name.invalid && (form.name.dirty || form.name.touched)">
                             <div *ngIf="form.name.errors?.['required']">
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email*"
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*"
                             formControlName="email">
                         <div *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)">
                             <div *ngIf="form.email.errors?.['required']">
@@ -29,30 +29,30 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                            placeholder="Your Message*" formControlName="message"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Tin nhắn*"
+                            formControlName="message"></textarea>
                         <div *ngIf="form.message.invalid && (form.message.dirty || form.message.touched)">
                             <div *ngIf="form.message.errors?.['required']">
                                 <span class="text-danger">Không được để rỗng</span>
                             </div>
                         </div>
                     </div>
-                    <button class="but form-control" type="submit">Submit</button>
+                    <button class="but form-control" type="submit">Gửi</button>
                 </form>
             </div>
             <div class="col-lg-6">
                 <div class="cont">
                     <ul>
-                        <li><a href=""><i class="fa-solid fa-location-dot me-3"></i><span>411 D Avenue, San
-                                    Francisco, CS 91950</span></a>
+                        <li><a href=""><i class="fa-solid fa-location-dot me-3"></i><span>Tòa Nhà HTC, 250 Hoàng Quốc
+                                    Việt, Cổ Nhuế, Cầu Giấy, Hà Nội</span></a>
                         </li>
                         <li><a href=""><i class="fa-solid fa-envelope me-3"></i><span>Demo@gmail.com</span></a>
                         </li>
-                        <li><a href=""><i class="fa-solid fa-phone me-3"></i><span>+921 - 48564254</span></a>
+                        <li><a href=""><i class="fa-solid fa-phone me-3"></i><span>+8424 3755 4010</span></a>
                         </li>
                     </ul>
                 </div>
-                <h4>Follow us on social media</h4>
+                <h4>Theo dõi chúng tôi trên mạng xã hội</h4>
                 <div class="icon">
                     <ul>
                         <li><a href=""><i class="fa-brands fa-facebook-f fb"></i></a></li>
