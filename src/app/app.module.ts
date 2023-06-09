@@ -11,8 +11,10 @@ import { ContactComponent } from './contact/contact.component';
 import { P404Component } from './p404/p404.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './detail/detail.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,16 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
     ContactComponent,
     P404Component,
     AboutComponent,
-    DetailComponent
+    DetailComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxStarRatingModule
+    NgxStarRatingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

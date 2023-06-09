@@ -1,0 +1,92 @@
+<app-header></app-header>
+<main>
+    <div class="checkout">
+        <img src="assets/image/about5.jpg" alt="">
+        <div class="text">
+            <h1>Chi tiết thanh toán</h1>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Chi tiết thanh toán</h2>
+                <hr>
+                <form action="" method="post" [formGroup]="formCheckout"> 
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Họ và tên*"
+                            formControlName="name">
+                        <div *ngIf="form.name.invalid && (form.name.dirty || form.name.touched)">
+                            <div *ngIf="form.name.errors?.['required']">
+                                <span class="text-danger">Không được để rỗng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*"
+                            formControlName="email">
+                        <div *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)">
+                            <div *ngIf="form.email.errors?.['required']">
+                                <span class="text-danger">Không được để rỗng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Địa chỉ*"
+                            formControlName="address">
+                        <div *ngIf="form.address.invalid && (form.address.dirty || form.address.touched)">
+                            <div *ngIf="form.address.errors?.['required']">
+                                <span class="text-danger">Không được để rỗng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Tin nhắn*"
+                            formControlName="message"></textarea>
+                        <div *ngIf="form.message.invalid && (form.message.dirty || form.message.touched)">
+                            <div *ngIf="form.message.errors?.['required']">
+                                <span class="text-danger">Không được để rỗng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="but form-control" type="submit">Đặt hàng</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h2>Đơn đặt hàng của bạn</h2>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of listCart">
+                            <td class="cart">
+                                <a href=""><i class="far fa-times-circle"></i></a>
+                                <img src="http://localhost:3000/uploads/{{item.image}}" alt="">
+                                <p>{{item.name}}</p>
+                            </td>
+                            <td class="price">{{item.sale_price}}₫</td>
+                            <td>
+                                <div class="inp mb-4">
+                                    <input type="text" name="" id="" value="{{item.quantity}}">
+                                </div>
+                            </td>
+                            <td class="price">{{item.sale_price}}₫</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="price">
+                    <span class="total-price">Tổng giá:</span>
+                    <span class="pri">0000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

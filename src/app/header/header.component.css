@@ -1,8 +1,5 @@
-header {
-    background-color: black;
-}
-
 .header-top {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -10,32 +7,40 @@ header {
 
 .phone {
     text-decoration: none;
-    color: white;
+    color: black;
     margin-right: 20px;
 }
 
 .mail {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .sign {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .regis {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .gach {
-    color: white;
+    color: black;
+}
+
+.header-bot {
+    background-color: black;
+}
+
+.logo{
+    margin: auto 0;
 }
 
 .menu ul li {
     display: inline-block;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .menu ul li a {

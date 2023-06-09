@@ -1,0 +1,47 @@
+.checkout img {
+    width: 100%;
+    position: relative;
+    opacity: 0.7;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.but {
+    background-color: #0791BE;
+    color: white;
+    border: none;
+    width: 30%;
+}
+
+.inp input {
+    width: 50%;
+    text-align: center;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-quantity,
+.total-price {
+    font-weight: bold;
+}
+
+.pri {
+    color: red;
+    font-weight: 600;
+    font-size: large;
+}
